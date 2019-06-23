@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap');
+
+:root {
+  --merriweather: 'Merriweather', serif;
+  --opensans: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-merriweather {
+  font-family: var(--merriweather);
+}
+
+body {
+  font-family: var(--opensans);
+  font-size: 16px;
+  background-color: #ccc;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#main {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  width: 100%;
+  padding: 25px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.section:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#img-caption {
+  margin-top: 15px;
+}
+
+#headline {
+  margin-bottom: 15px;
+}
+
+p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+#tribute-link {
+  color: blue;
+}
+
+@media (max-width: 767px) {
+  #fcc_test_suite_wrapper {
+    display: none;
+  }
+
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #title {
+    font-size: 1.5em;
+  }
+
+  .section {
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
